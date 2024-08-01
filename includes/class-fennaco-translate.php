@@ -40,6 +40,7 @@ class Fennaco_Translate
 
         // Enqueue scripts for the frontend
         add_action('wp_enqueue_scripts', array('Fennaco_Translate_Frontend', 'enqueue_scripts'));
+        add_action('admin_enqueue_scripts', array('Fennaco_Translate_Admin', 'enqueue_scripts'));
     }
 }
 
